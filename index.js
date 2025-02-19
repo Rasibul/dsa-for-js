@@ -40,4 +40,26 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const getElement = (arr, index) => arr[index];
 
-console.log(getElement(numbers, 5));
+// console.log(getElement(numbers, 5));
+
+
+
+// O(n^2) - Quadratic Time Complexity
+function findPairs (arr){
+  for (let i = 0; i< arr.length; i++){
+    for (let j = 0; j< arr.length; j++){
+      console.log(arr[i], arr[j]);
+    }
+  }
+
+  // O(n) - Linear Time Complexity
+  for (let q = 0 ; q < arr.length; q++){
+    console.log(arr[q]);
+  }
+}
+
+
+
+const number = [1, 2, 3, 4, 5];
+
+findPairs(number);
